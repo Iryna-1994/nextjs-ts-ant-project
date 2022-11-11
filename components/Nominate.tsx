@@ -34,7 +34,7 @@ const Nominate = () => {
       <Paragraph className='text-center mb-10'>In order to be eligible for the Women Tech Idols awards, your nomination must be:</Paragraph>
       <Layout className='grid md:grid-cols-3 xl:grid-cols-5 gap-7 text-center'>
         {
-          data.map((item, index) => {
+          data.map((item: any, index: number) => {
             return (
               <Card title={item.title} key={index} className="bg-red-600 rounded-xl px-8 py-5 text-yellow-200 font-bold">
                 <Paragraph className='mt-4 text-left text-white font-normal'>
