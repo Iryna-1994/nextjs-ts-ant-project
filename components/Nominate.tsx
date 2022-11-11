@@ -37,9 +37,9 @@ const Nominate = () => {
           data.map((item, index) => {
             return (
               <Card title={item.title} key={index} className="bg-red-600 rounded-xl px-8 py-5 text-yellow-200 font-bold">
-                <div className='mt-4 text-left text-white font-normal'>
+                <Paragraph className='mt-4 text-left text-white font-normal'>
                   {item.content}
-                </div>
+                </Paragraph>
               </Card>
             )
           })
